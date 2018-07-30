@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Set the Database cerdentials to Connect to Database
+ * Set the Database credentials to Connect to Database
  */
 /** The name of the database */
 define('DB_NAME', 'ancs');

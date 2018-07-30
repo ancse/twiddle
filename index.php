@@ -4,5 +4,5 @@
 // 	exit();
 
 require_once 'includes/functions.php';
-
+// include_once 'templates/header.php';
 get_header();

@@ -4,48 +4,37 @@
 	box-shadow: 1px 5px 1px 1px #ccc;
 	width: 100%;
 }
-
 .level-1 {
 	list-style-type: none;
 	display: flex;
 }
-
 .level-2 ,
 .level-2-r {
 	margin: 30px 20px 0px 20px;
 	float: right;
-}
-.level-2 > .text > a,
+}.level-2 > .text > a,
 .level-2-r > .text > a {
 	text-decoration: none;
 	color : white;
 }
-
 .level-3 {
-	list-style-type: none;
-		
+	list-style-type: none;	
 }
-
-.level-4 {
-
-}
-
+.level-4 {}
 .level-2-l .logo {
-	background-image: url('../images/logo.png'); 
+	background-image: url('../images/twiddle.png'); 
 	width: 100px;
 	height: 50px;
 }
 .text {
 	font-size: 20px;
 }
-
 ul , li {
 	list-style-type: none;
 }
-
 ul.log {
     margin-left: 25%;
 }
-.work::first-of-type {
-
+.work:first-of-type {
+	stop-color:cgf;
 }

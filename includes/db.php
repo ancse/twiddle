@@ -24,6 +24,8 @@ class db {
 	 */
 	protected $dbhost;
 
+	require_once '../config.php';
+	global $db = new db( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST );
 	/**
 	 * Connects to the database server and selects a database.
 	 *
@@ -48,7 +50,6 @@ class db {
 	 */
     public function db_connect () {
     	$this->$mysqli = mysqli_init();
-        require_once '../config.php';
         
 		if ( !$this->$mysqli ) {
 		    die( 'mysqli_init failed' );
@@ -62,12 +63,8 @@ class db {
 		    die( 'Setting MYSQLI_OPT_CONNECT_TIMEOUT failed' );
 		}
 
-		$this->require_db();
-
 		if ( !$this->$mysqli->real_connect( $this->dbhost, $this->dbuser, $this->dbpassword, $this->dbname ) ) {
 		    die( 'Connect Error (' . mysqli_connect_errno() . ')' . mysqli_connect_error() );
 		}
     }
 }
-
-$db = new db( DB_USER, DB_PASSWORD, DB_NAME, DB_HOST );
